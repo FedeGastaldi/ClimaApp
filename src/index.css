@@ -1,0 +1,129 @@
+body {
+  font-family: 'Hubballi', cursive;
+  background-color: #f1f5f9;
+  background-image: url(http://www.ideam.gov.co/documents/21021/21135/imagen-101.jpg/7b928e27-2a91-4a3f-a58b-b107c867cf04?t=1423495219687);
+  font-size: 1.6rem;
+}
+header {
+  padding: 1.5rem;
+  
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin:0;
+}
+.dos-columnas {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .dos-columnas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main {
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+.contenedor {
+  margin: 0 auto 2rem auto;
+  border-radius: .5rem;
+  background-color: white;
+  padding: 4rem;
+  -webkit-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  width: 100%;
+  
+}
+form {
+  width: 100%;
+}
+.campo {
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+}
+.campo label {
+  display: block;
+
+}
+.campo input,
+.campo select {
+  all: unset;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+ input[type="submit"] {
+  background-color: #42032C;
+  margin: 2rem auto 0 auto;
+  display: block;
+  padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  transition: background-color .3s ease;
+}
+@media (min-width: 768px) {
+   input[type="submit"]  {
+     max-width: 400px;
+  }
+}
+ input[type="submit"]:hover {
+  background-color: #0369a1;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.clima {
+  text-align: center;
+}
+.clima > p:first-of-type{
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+}
+.clima p {
+  text-align: center;
+  margin: 0;
+}
+
+.clima p span{
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.temp_min_max{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#camposoblig{
+  background-color: #cc0c16;
+  margin: 2rem auto 0 auto;
+  display: block;
+  padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+}
